@@ -1,0 +1,16 @@
+.main{
+    display: flex;
+    .sidebar{
+        height: 100vh;
+        max-width: 220px;
+        position: sticky;
+        top: 0;
+    }
+    .mainContainer{
+        width: 95%;
+        .menu{
+            // margin-left: 30px;
+            margin-left:10px;
+        }
+    }
+}

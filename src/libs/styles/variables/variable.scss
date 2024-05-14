@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+// Color palette
+$magenta400: #f877d2;
+$purple400: #c490f9;
+$blue400: #6daafb;
+$teal400: #01b8ca;
+$green400: #06c167;
+$lime400: #77b71c;
+$yellow400: #d79900;
+$amber400: #df9500;
+$orange400: #fc823a;
+$red400: #fc7f79;
+$gray400: #a6a6a6;
+$magenta50: #feeff9;
+$purple50: #f9f1ff;
+$blue50: #eff4fe;
+$teal50: #e2f8fb;
+$green50: #eaf6ed;
+$lime50: #eef6e3;
+$yellow50: #fdf2dc;
+$amber50: #fff1e1;
+$orange50: #fff0e9;
+$red50: #fff0ee;
+$white: #ffffff;
+$black: #000000;
+$darkGray: #414141;
+$gray: #8a8a8a;
+$purple: #362d83;
+// Project type
+$solar: #e5aa00;
+$wind: #147d35;
+$hydro: #004e98;
+
+// UI component Based
+$primary: $black;
+$accent: #01ca8e;
+$info: $purple;
+$neutral: $hydro;
+$toast: #327040;
+$tooltip: $darkGray;
+$outline: #f3f3f3;
+$background: $white;
+$sidebarBackground: #141414;
+$headerBottomBorder: #e8e8e8;
+
+// UI Status
+$warning: #f6bc2f;
+$error: #de1135;
+$hint: $warning;
+$success: #0e8345;
+$active: $success;
+$redeemed: $purple;
+$transferred: #ff932e;
+$expired: $gray;
+$failed: $error;
+
+// Tag borders (status)
+$successBorder: rgba($success, 0.2);
+$activeBorder: rgba($active, 0.2);
+$redeemedBorder: rgba($redeemed, 0.2);
+$transferredBorder: rgba($transferred, 0.2);
+$expiredBorder: rgba($expired, 0.2);
+$failedBorder: rgba($failed, 0.2);
+
+// Tag background (status)
+$successBackground: rgba($success, 0.1);
+$activeBackground: rgba($active, 0.1);
+$redeemedBackground: rgba($redeemed, 0.1);
+$transferredBackground: rgba($transferred, 0.1);
+$expiredBackground: rgba($expired, 0.1);
+$failedBackground: rgba($failed, 0.1);
+
+// UI text/font Based
+$text: $primary;
+$text-light: $gray;
+$content: #5e5e5e;
+$placeholder: $content;
+$placeholderDisabled: $gray400;
+$content-light: $tooltip;
+
+$bglight: #f8f8f8;
+
+
+
+@mixin scrollbar(
+  $thumbColor: $accent,
+  $trackColor: rgba($accent, 0.1),
+  $width: 4px
+) {
+  scrollbar-width: thin;
+  scrollbar-color: $thumbColor $trackColor;
+
+  &::-webkit-scrollbar {
+    width: $width;
+    height: 0px;
+    @media #{$sm} {
+      width: 0;
+    }
+  }
+
+  &::-webkit-scrollbar-track {
+    width: $width;
+    background-color: $trackColor;
+    @media #{$sm} {
+      width: 0;
+    }
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $thumbColor;
+    border-radius: math.div($width, 2);
+    @media #{$sm} {
+      width: 0;
+    }
+  }
+}

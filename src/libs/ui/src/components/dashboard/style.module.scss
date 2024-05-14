@@ -1,0 +1,94 @@
+@import '../../../../styles/variables/variable.scss';
+
+.chart{
+    padding: 10px 20px 22px 20px;
+    .heading{
+        font-size: 14px;
+        font-style:"Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 400;
+        color:$gray ;
+    }
+}
+.mapbox{
+    margin-top: 30px;
+    width: fit-content;
+    border: 1px solid $outline;
+    border-radius: 8px;
+    .maphead{
+        font-size: 14px;
+        font-style:"Roboto", "Helvetica", "Arial", sans-serif;
+        font-weight: 500;
+        color:$gray ;
+        padding-left: 5px;
+    }
+    .map{
+        width: 790px !important;
+        height: 400px !important;
+        border-radius: 2px;
+        margin: 30px 10px 10px 10px;
+        border: 1px solid $outline;
+    }
+}
+
+.main{
+    clip: auto;
+    margin-left: 6px;
+    .client{
+        font-weight: 600;
+    }
+    .subclient{
+        font-size: 14px;
+        font-weight: 500;
+        color: $content;
+    }
+    .btn{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        border-radius: 9px;
+        padding:15px 6px 17px 6px;
+        background-color: $black;
+        color: $magenta50;
+    }
+    .date{
+        border-radius: 9px;
+    }
+    .activity{
+        width: 363px;
+        height: 470px;
+        border: 1px solid $outline;
+        border-radius: 7px;
+        padding: 15px;
+        overflow-y: scroll;
+        // scrollbar-color: rgb(158, 221, 158) !important;
+        // scrollbar-width: 15px !important;
+        .act{
+            font-size: 16px;
+            margin:0;
+            margin-bottom: 20px;
+            font-weight: 400;
+        }
+        .content{
+            .head{
+                margin: 10px 0;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            .para{
+                margin: 10px 0;
+                font-style: "manrope",sans-serif;
+                font-weight: 400;
+                font-size: 13px;
+                color: $gray;
+            }
+            .date{
+                font-style: "manrope",sans-serif;
+                font-size: 13px;
+                color: $gray;
+                font-weight: 400;
+                margin-bottom: 10px;
+            }
+        }
+
+    }
+}

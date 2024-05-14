@@ -1,0 +1,61 @@
+@import '../../../../styles/variables/variable.scss';
+.main{
+    background-color: $outline;
+    margin-bottom: 20px;
+    width: auto;
+    .wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin:0 10px 0 10px;
+        .search{
+            display: flex;
+            align-items: center;
+            border-radius: 10px;
+            background-color: $headerBottomBorder;
+            
+            .input{
+                border: none;
+                outline: none;
+                padding: 14px;
+                min-width: 280px;
+                background-color: transparent;
+            }
+        }
+        .navmenu{
+            width: 300px;
+            display: flex;
+            justify-content: space-between;
+            .plus{
+                background-color: $black;
+                color: $white;
+                height: fit-content;
+                display: flex;
+                align-items: center;
+                border-radius: 8px;
+            }
+            .bell{
+                display: flex;
+                align-items: center;
+            }
+            .setting{
+                display: flex;
+                align-items: center;
+            }
+            .country{
+                display: flex;
+                align-items: center;
+                font-size: small;
+                font-style:"manrope", sans-serif;
+            }
+            .globe{
+                display: flex;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.ant-select-selection-item{
+    font-size: 20px;
+}

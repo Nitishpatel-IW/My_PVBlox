@@ -1,14 +1,40 @@
 {
-  "name": "pv_blox",
+  "name": "My_PVblox",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/base": "^5.0.0-beta.40",
+    "@mui/icons-material": "^5.15.15",
+    "@mui/material": "^5.15.15",
+    "@mui/x-data-grid": "^7.3.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
+    "@types/jest": "^27.5.2",
+    "@types/node": "^16.18.96",
+    "@types/react": "^18.2.79",
+    "@types/react-dom": "^18.2.25",
+    "antd": "^5.16.5",
+    "baseui": "^14.0.0",
+    "formik": "^2.4.5",
+    "leaflet": "^1.9.4",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-leaflet": "^4.2.1",
+    "react-otp-input": "^3.1.1",
+    "react-phone-input-2": "^2.15.1",
+    "react-phone-input-material-ui": "^2.18.1",
+    "react-phone-number-input": "^3.4.0",
+    "react-router-dom": "^6.23.0",
     "react-scripts": "5.0.1",
+    "react-select": "^5.8.0",
+    "recharts": "^2.12.6",
+    "sass": "^1.75.0",
+    "styletron-engine-monolithic": "^1.0.0",
+    "styletron-react": "^6.1.1",
+    "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -34,5 +60,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.12",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@types/react-router-hash-link": "^2.4.9",
+    "typescript": "^5.3.3"
   }
 }

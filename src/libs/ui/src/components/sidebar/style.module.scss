@@ -1,0 +1,62 @@
+@import '../../../../styles/variables/variable.scss';
+.sidebar {
+    flex: 2;
+    background-color: $sidebarBackground;
+    height: 100vh;
+    min-width: 170px;
+    overflow-y: auto;
+    .logo {
+        padding-top: 10px;
+        padding-left: 28px;
+
+        .top {
+            font-weight: 600;
+            color: $green400;
+        }
+    }
+
+    .menu {
+        padding-top: 20px;
+        padding-left: 1px;
+    }
+}
+
+.navItem {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-left: 4px solid transparent;
+    
+    .muiIcon{
+        display: flex;
+        align-items: center;
+        color: $gray;
+    }
+    .title{
+        color: $gray;
+    }
+
+    &.active {
+        border-color: $outline;
+        color: $outline;
+        background-color: $darkGray;
+        .muiIcon{
+            color: $white;
+        }
+        .title{
+            color: $white;
+        }
+    }
+
+}
+.poweredTitle {
+    color: $gray;
+    font-size: 14px;
+    font-style: normal;
+    padding: 16px;
+    span {
+      font-weight: 700;
+      color: $white;
+    }
+  }
