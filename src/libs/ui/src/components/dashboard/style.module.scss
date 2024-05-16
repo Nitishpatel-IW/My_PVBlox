@@ -34,12 +34,13 @@
     clip: auto;
     margin-left: 6px;
     .client{
-        font-weight: 600;
+        font-weight: 500;
+        font-size: 22px;
     }
     .subclient{
-        font-size: 14px;
+        font-size: 13px;
         font-weight: 500;
-        color: $content;
+        color: $gray400;
     }
     .btn{
         display: flex;

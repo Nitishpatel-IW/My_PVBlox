@@ -1,0 +1,59 @@
+@import '../../../../styles/variables/variable.scss';
+.main{
+    height: 500px;
+    width: auto;
+    margin-right: 10px;
+    .client{
+        font-weight: 500;
+        font-size: 22px;
+    }
+    .subClient{
+        font-size: 13px;
+        font-weight: 500;
+        color: $gray400;
+    }
+    @mixin prop{
+        background-color: $bgdark;
+        border: none;
+        border-radius:8px ;
+        font-size: 16px;
+        line-height: 2px;
+        cursor: pointer;
+        font-weight: 500;
+        padding: 2px 10px 2px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .list{
+        @include prop;
+        &:active{
+            background-color: $accent;
+            color: $white;
+        }
+    }
+    .kanban{
+        @include prop;
+        margin-right: 15px;
+        &:active{
+            background-color: $accent;
+            color: $white;
+        }
+    }
+    .filter{
+        @include prop;
+    }
+
+    .btn{
+        @include prop;
+        background-color: $black;
+        color: $magenta50;
+        border: none;
+        margin-right: 15px;
+    }
+    .dot{
+        @include prop;
+        display: flex;
+        align-items: center;
+    }
+}

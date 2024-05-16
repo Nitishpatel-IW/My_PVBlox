@@ -2,9 +2,10 @@ import React, { useState } from "react";
 import style from './style.module.scss';
 import Sidebar from "../../libs/ui/src/components/sidebar";
 import Navbar from "../../libs/ui/src/components/navbar";
-import Table from "../../libs/ui/src/components/dataTable";
 import { Block } from "baseui/block";
 import Dashboard from "../../libs/ui/src/components/dashboard";
+import Details from "../../libs/ui/src/components/tableDetails";
+import OppTable from "../../libs/ui/src/components/opportunityTable";
 
 
 
@@ -23,7 +24,8 @@ const Landing = () => {
         <Navbar />
         <div className={style.menu}>
           {active === "dashboard" && <Dashboard />}
-          {active === "opportunities" && <Table />}
+          {/* {active === "opportunities" && <OppTable />} */}
+          {active === "opportunities" && <Details/> }
         </div>
       </Block>
 
